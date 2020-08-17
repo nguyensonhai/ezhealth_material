@@ -27,7 +27,7 @@ export default function SectionDownload() {
           </GridItem>
           <GridItem xs={12} sm={8} md={6}>
             <Button
-              color="success"
+              color="rose"
               size="lg"
               href="https://firebasestorage.googleapis.com/v0/b/ez-health.appspot.com/o/android%2Fezhealth-v.1.0.0.apk?alt=media&token=450f0d1e-7ba2-4ae3-ac5e-b944b515cf9b"
               target="_blank"
@@ -51,17 +51,16 @@ export default function SectionDownload() {
             <h3>Thank you for supporting us!</h3>
           </GridContainer>
           <Button color="twitter">
-            <i className={classes.socials + " fab fa-twitter"} /> Tweet
+            <i className={classes.socials + " fab fa-twitter"} />
           </Button>
           <Button color="facebook">
-            <i className={classes.socials + " fab fa-facebook-square"} /> Share
+            <i className={classes.socials + " fab fa-facebook-square"} />
           </Button>
           <Button color="google">
             <i className={classes.socials + " fab fa-google-plus-g"} />
-            Share
           </Button>
           <Button color="github">
-            <i className={classes.socials + " fab fa-github"} /> Star
+            <i className={classes.socials + " fab fa-github"} />
           </Button>
         </div>
       </div>

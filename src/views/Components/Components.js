@@ -14,7 +14,7 @@ import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import SectionDownload from "./Sections/SectionDownload.js";
-
+import Slider from "components/Slider/Slider.js";
 import styles from "assets/jss/material-kit-react/views/components.js";
 
 const useStyles = makeStyles(styles);
@@ -40,12 +40,13 @@ export default function Components(props) {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>EZ HEALTH.</h1>
+                {/* <h1 className={classes.title}>EZ HEALTH.</h1>
                 <h3 className={classes.subtitle}>
                   Take control of your goals. Track calories, breadown
                   ingredients, log activities and plan your healthy life cycle
                   with Ez Health.
-                </h3>
+                </h3> */}
+                <Slider />
               </div>
             </GridItem>
           </GridContainer>
