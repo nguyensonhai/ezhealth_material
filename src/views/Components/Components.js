@@ -59,7 +59,7 @@ export default function Components(props) {
       >
         <SectionDownload />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

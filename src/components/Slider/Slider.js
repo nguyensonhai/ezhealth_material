@@ -8,7 +8,7 @@ class Slider extends Component {
     return (
       <div className="container" fluid>
         <div className={"sliderContainer"}>
-          <section id="slider">
+          <section id="sliderImage">
             <input type="radio" name="slider" id="s1" />
             <input type="radio" name="slider" id="s2" />
             <input type="radio" name="slider" id="s3" />
