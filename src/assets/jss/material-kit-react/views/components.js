@@ -24,8 +24,7 @@ const componentsStyle = {
   },
   mainRaised: {
     margin: "-60px 30px 0px",
-    borderTopLeftRadius: "6px",
-    borderTopRightRadius: "6px",
+    borderRadius: "6px",
   },
   link: {
     textDecoration: "none",
