@@ -24,7 +24,7 @@ export default function SectionDownload() {
             <Button
               color="github"
               size="lg"
-              href="https://firebasestorage.googleapis.com/v0/b/ez-health.appspot.com/o/android%2Fezhealth-v.1.1-beta.apk?alt=media&token=889e84dd-710c-40f5-ae0e-e3669907c64a"
+              href="https://firebasestorage.googleapis.com/v0/b/ez-health.appspot.com/o/android%2Fezhealth-v.1.1-beta.apk?alt=media&token=e1019d97-9d4d-40b7-8a77-645a2c29f766"
             >
               Download for Android
             </Button>
