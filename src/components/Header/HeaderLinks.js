@@ -27,34 +27,19 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <Button
-          href="#download"
-          color="transparent"
-          // target="_blank"
-          className={classes.navLink}
-        >
-          <CloudDownload className={classes.icons} />
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        {/*<Tooltip title="Delete">
-          <IconButton aria-label="Delete">
-            <DeleteIcon />
-          </IconButton>
-        </Tooltip>*/}
         <Tooltip
-          id="instagram-twitter"
-          title="Follow us on twitter"
+          id="youtube"
+          title="Follow us on Youtube"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="#twitter"
-            // target="_blank"
+            href="https://www.youtube.com/channel/UCzhIDGffGSfQgfBdG5BRAZw"
+            target="_blank"
             color="transparent"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-twitter"} />
+            <i className={classes.socialIcons + " fab fa-youtube"} />
           </Button>
         </Tooltip>
       </ListItem>
@@ -67,7 +52,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/ezratechsoftware"
+            href="https://www.facebook.com/ezratechteam"
             target="_blank"
             className={classes.navLink}
           >
@@ -77,18 +62,18 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-tooltip"
-          title="Follow us on instagram"
+          id="github"
+          title="Follow us on Github"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
             color="transparent"
-            href="#instagram"
-            // target="_blank"
+            href="https://github.com/ezratech"
+            target="_blank"
             className={classes.navLink}
           >
-            <i className={classes.socialIcons + " fab fa-instagram"} />
+            <i className={classes.socialIcons + " fab fa-github"} />
           </Button>
         </Tooltip>
       </ListItem>

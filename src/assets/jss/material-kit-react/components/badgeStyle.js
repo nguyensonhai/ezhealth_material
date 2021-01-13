@@ -4,12 +4,12 @@ import {
   dangerColor,
   successColor,
   infoColor,
-  roseColor
+  roseColor,
 } from "assets/jss/material-kit-react.js";
 
 const badgeStyle = {
   badge: {
-    marginRight: "3px",
+    marginRight: "0px",
     borderRadius: "12px",
     padding: "5px 12px",
     textTransform: "uppercase",
@@ -20,29 +20,29 @@ const badgeStyle = {
     textAlign: "center",
     whiteSpace: "nowrap",
     verticalAlign: "baseline",
-    display: "inline-block"
+    display: "inline-block",
   },
   primary: {
-    backgroundColor: primaryColor
+    backgroundColor: primaryColor,
   },
   warning: {
-    backgroundColor: warningColor
+    backgroundColor: warningColor,
   },
   danger: {
-    backgroundColor: dangerColor
+    backgroundColor: dangerColor,
   },
   success: {
-    backgroundColor: successColor
+    backgroundColor: successColor,
   },
   info: {
-    backgroundColor: infoColor
+    backgroundColor: infoColor,
   },
   rose: {
-    backgroundColor: roseColor
+    backgroundColor: roseColor,
   },
   gray: {
-    backgroundColor: "#6c757d"
-  }
+    backgroundColor: "#6c757d",
+  },
 };
 
 export default badgeStyle;

@@ -5,7 +5,11 @@ const componentsStyle = {
   brand: {
     color: "#FFFFFF",
     textAlign: "left",
+    background: "rgba(255,255,255,0.66)",
+    padding: 20,
+    borderRadius: 10,
   },
+
   title: {
     fontSize: "4.2rem",
     fontWeight: "600",
@@ -23,8 +27,11 @@ const componentsStyle = {
     zIndex: "3",
   },
   mainRaised: {
-    margin: "-60px 30px 0px",
-    borderRadius: "6px",
+    margin: "-40px 0px -70px",
+    padding: "10px 0 40px 0",
+    borderRadius: "5vh",
+    boxShadow:
+      "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)",
   },
   link: {
     textDecoration: "none",

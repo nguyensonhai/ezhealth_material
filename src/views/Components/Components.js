@@ -7,59 +7,52 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 // core components
 import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
 import Parallax from "components/Parallax/Parallax.js";
+
+import Projects from "components/Projects/Projects.js";
+import InfoArea from "components/InfoArea/InfoArea.js";
+import Bottom from "components/Bottom/Bottom.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
-import SectionDownload from "./Sections/SectionDownload.js";
-import Slider from "components/Slider/Slider.js";
 import styles from "assets/jss/material-kit-react/views/components.js";
+import "assets/css/effects/index.css";
+import "assets/css/effects/span-hover.css";
+import "assets/css/effects/font.css";
+import "assets/css/effects/scrollbar.css";
 
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
   const classes = useStyles();
   const { ...rest } = props;
+
   return (
-    <div>
+    <div className={"main"}>
       <Header
-        brand="Ez Health"
+        brand="Easy Health"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
         changeColorOnScroll={{
-          height: 400,
+          height: 50,
           color: "white",
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/bg/background_dark.png")}>
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem>
-              <div className={classes.brand}>
-                {/* <h1 className={classes.title}>EZ HEALTH.</h1>
-                <h3 className={classes.subtitle}>
-                  Take control of your goals. Track calories, breadown
-                  ingredients, log activities and plan your healthy life cycle
-                  with Ez Health.
-                </h3> */}
-                <Slider />
-              </div>
-            </GridItem>
-          </GridContainer>
-        </div>
+      <Parallax image={require("assets/img/stocks/background_dark.jpg")}>
+        <InfoArea />
       </Parallax>
-
       <div
         className={classNames(classes.main, classes.mainRaised)}
-        id={"download"}
+        style={{
+          backgroundColor: "white",
+          transition: "all 0.6s ease",
+        }}
       >
-        <SectionDownload />
+        <Projects />
       </div>
-      {/* <Footer /> */}
+      <Bottom />
+      {/* <SectionCarousel /> */}
     </div>
   );
 }

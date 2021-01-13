@@ -1,15 +1,20 @@
-import { container } from "assets/jss/material-kit-react.js";
-
 const downloadStyle = {
-  section: {
-    padding: "70px 0"
+  container: {
+    paddingRight: "5px",
+    paddingLeft: "5px",
+    marginRight: "auto",
+    marginLeft: "auto",
+    width: "95%",
   },
-  container,
+  section: {
+    padding: "20px 0",
+  },
+
   textCenter: {
-    textAlign: "center"
+    textAlign: "center",
   },
   sharingArea: {
-    marginTop: "80px"
+    marginTop: "80px",
   },
   socials: {
     maxWidth: "24px",
@@ -20,8 +25,8 @@ const downloadStyle = {
     top: "0",
     height: "100%",
     fontSize: "20px",
-    marginRight: "4px"
-  }
+    marginRight: "4px",
+  },
 };
 
 export default downloadStyle;

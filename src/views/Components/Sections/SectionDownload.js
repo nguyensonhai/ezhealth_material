@@ -4,53 +4,84 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 // core components
 import styles from "assets/jss/material-kit-react/views/componentsSections/downloadStyle.js";
 
 const useStyles = makeStyles(styles);
-
+const cursor = {
+  cursor:
+    "url(https://firebasestorage.googleapis.com/v0/b/nguyensonhai-developer.appspot.com/o/cursors%2Flink.cur?alt=media&token=aa6c3a1b-3068-4e8f-8e94-43adad7bb033),pointer",
+};
 export default function SectionDownload() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
       <div className={classes.container}>
-        <GridContainer className={classes.textCenter} justify="center">
-          <GridItem xs={12} sm={12} md={8}>
-            <h2>Get It Now</h2>
-          </GridItem>
-          <GridItem xs={12} sm={8} md={6}>
-            <Button
-              color="github"
-              size="lg"
-              href="https://firebasestorage.googleapis.com/v0/b/ez-health.appspot.com/o/android%2Fezhealth-v.1.1-beta.apk?alt=media&token=e1019d97-9d4d-40b7-8a77-645a2c29f766"
-            >
-              Download for Android
-            </Button>
-            <Button color="rose" size="lg" href="" target="_blank">
-              iOS coming soon
-            </Button>
-          </GridItem>
-        </GridContainer>
-        <br />
-        <br />
         <div className={classes.textCenter + " " + classes.sharingArea}>
-          <GridContainer justify="center">
-            <h3>Thank you for supporting us!</h3>
+          <GridContainer justify="center" style={{ marginBottom: 20 }}>
+            <h3
+              style={{
+                color: "white",
+                width: "85%",
+                fontFamily: "Quicksand",
+                fontSize: 30,
+              }}
+            >
+              We work hard to create beautiful applications while improving
+              their usability..
+            </h3>
           </GridContainer>
-          <Button color="twitter">
-            <i className={classes.socials + " fab fa-twitter"} />
-          </Button>
-          <Button color="facebook">
-            <i className={classes.socials + " fab fa-facebook-square"} />
-          </Button>
-          <Button color="google">
-            <i className={classes.socials + " fab fa-google-plus-g"} />
-          </Button>
-          <Button color="github">
-            <i className={classes.socials + " fab fa-github"} />
-          </Button>
+          <a
+            id="facebook"
+            href="https://www.facebook.com/sharer/sharer.php?u=https://ezratech.web.app"
+            target="_blank"
+          >
+            <Button color="facebook" className="btn" style={cursor}>
+              <i className={classes.socials + " fab fa-facebook-square"} />
+              share
+            </Button>
+          </a>
+          <a
+            id="twitter"
+            href="http://www.twitter.com/share?url=https://ezratech.web.app"
+            target="_blank"
+            className={"nounderline"}
+          >
+            <Button color="twitter" className="btn" style={cursor}>
+              <i className={classes.socials + " fab fa-twitter"} /> tweet
+            </Button>
+          </a>
+          <a
+            id="google"
+            href="mailto:ezratechteam@gmail.com"
+            target="_blank"
+            className={"nounderline"}
+          >
+            <Button color="google" className="btn" style={cursor}>
+              <i className={classes.socials + " fab fa-google"} /> mail
+            </Button>
+          </a>
+          <a
+            id="github"
+            href="https://github.com/ezratech/ezhealth"
+            target="_blank"
+            className={"nounderline"}
+          >
+            <Button color="github" className="btn" style={cursor}>
+              <i className={classes.socials + " fab fa-github"} /> star
+            </Button>
+          </a>
+          <a
+            id="paypal"
+            href="https://www.paypal.com/paypalme/nguyensonhai"
+            target="_blank"
+            className={"nounderline"}
+          >
+            <Button color="paypal" className="btn" style={cursor}>
+              <i className={classes.socials + " fab fa-paypal"} /> donate
+            </Button>
+          </a>
         </div>
       </div>
     </div>

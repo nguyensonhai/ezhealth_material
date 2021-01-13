@@ -1,53 +1,31 @@
-/*!
-
- =========================================================
- * Material Kit React - v1.9.0 based on Material Kit - v2.0.2
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/material-kit-react
- * Copyright 2020 Creative Tim (https://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/material-kit-react/blob/master/LICENSE.md)
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
-
-// ##############################
-// // // Variables - Styles that are used on more than one component
-// #############################
-
-const drawerWidth = 260;
+const drawerWidth = 90;
 
 const transition = {
   transition: "all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1)",
 };
 
 const containerFluid = {
-  paddingRight: "15px",
-  paddingLeft: "15px",
+  paddingRight: "5px",
+  paddingLeft: "5px",
   marginRight: "auto",
   marginLeft: "auto",
   width: "100%",
 };
 const container = {
   ...containerFluid,
+
   // "@media (min-width: 576px)": {
-  //   maxWidth: "540px",
+  //   maxWidth: "540px"
   // },
   // "@media (min-width: 768px)": {
-  //   maxWidth: "720px",
+  //   maxWidth: "720px"
   // },
   // "@media (min-width: 992px)": {
-  //   maxWidth: "960px",
+  //   maxWidth: "960px"
   // },
   // "@media (min-width: 1200px)": {
-  //   maxWidth: "1180px",
-  // },
-  // "@media (min-width: 1800px)": {
-  //   maxWidth: "1900px",
-  // },
+  //   maxWidth: "1140px"
+  // }
 };
 
 const boxShadow = {
@@ -163,7 +141,7 @@ const title = {
   margin: "1.75rem 0 0.875rem",
   textDecoration: "none",
   fontWeight: "700",
-  fontFamily: `"Roboto Slab", "Times New Roman", serif`,
+  fontFamily: '"Roboto Slab", "Times New Roman", serif',
 };
 
 const cardTitle = {

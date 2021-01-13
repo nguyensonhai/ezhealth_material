@@ -28,7 +28,7 @@ export default function SectionTabs() {
                 <small>Tabs with Icons on Card</small>
               </h3>
               <CustomTabs
-                headerColor="success"
+                headerColor="primary"
                 tabs={[
                   {
                     tabName: "Profile",
