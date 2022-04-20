@@ -7,6 +7,7 @@ import "assets/scss/material-kit-react.scss?v=1.9.0";
 import Eror404 from "views/Components/Error404/Error404";
 // pages for this product
 import Components from "views/Components/Components.js";
+import PrivacyPolicy from "views/Components/PrivacyPolicy/PrivacyPolicy";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -20,6 +21,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Components} />
+        <Route path="/privacy" component={PrivacyPolicy} />
         <Route component={Eror404} />
       </Switch>
     </BrowserRouter>

@@ -29,6 +29,14 @@ export default function Footer(props) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
+        <a
+          href="/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "white", fontFamily: "Alata" }}
+        >
+          Privacy Policy
+        </a>
         <div
           className={classes.center}
           style={{ color: "white", fontFamily: "Alata" }}
